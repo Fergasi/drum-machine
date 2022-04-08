@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="tip">
-        (Click anywhere to hear sound...)
+        Fergus's Metronome and Basic Drum Machine
     </div>
-
+    <h2 class="counter"></h2> 
     <div class="metronome">
         <div class="background-left"></div>
         <div class="background-center">
@@ -19,6 +19,32 @@
         </div>
         <div class="background-right"></div>
         <div class="arm"></div>
+    </div>
+    <br>
+    <div id="sound-selection">
+        <div>
+            <input type="checkbox" id="metronome" value="metronome">
+            <label for="metronome">Metronome</label>           
+        </div>
+        
+        <div>
+            <input type="checkbox" id="hi-hat" value="hi-hat">
+            <label for="hi-hat">Hi-Hat</label>
+            <input id="userInput-hi-hat" type="number" value="0" min="0" max="4">
+        </div>
+        
+        <div>
+            <input type="checkbox" id="kick-drum" value="kick-drum">
+            <label for="kick-drum">Kick Drum</label>
+            <input id="userInput-kick-drum" type="number" value="0" min="0" max="4">
+        </div>
+        
+        <div>
+            <input type="checkbox" id="snare-drum" value="snare-drum">
+            <label for="snare-drum">Snare Drum</label>
+            <input id="userInput-snare-drum" type="number" value="0" min="0" max="4">
+        </div>
+        
     </div>
 
     <script src="main.js"></script>
